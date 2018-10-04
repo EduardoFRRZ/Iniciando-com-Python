@@ -36,4 +36,16 @@ def funcao2(x):
 x = 10
 funcao2(x)
 
+#Aqui o "var" e o "copia" apontam para o mesmo endereço de memória (Em pythom se eu copiar uma lista ele vai apontar para o endereço da lista original)
+var = ['abcd',1,2,3]
+copia = var
+var.append("fghi")
+print(var)
+print(copia)
 
+#Com a função copy() a variavel "copia" cria um novo endereço de memoria, e não aponta para o endereço da variavel ao qual foi copiado
+var = ['abcd',1,2,3]
+copia = var.copy()
+var.append("fghi")
+print(var)
+print(copia)

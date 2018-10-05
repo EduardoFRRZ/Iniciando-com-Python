@@ -49,3 +49,22 @@ copia = var.copy()
 var.append("fghi")
 print(var)
 print(copia)
+
+var = None
+print(var)
+
+############Lendo arquivo##########
+import csv
+
+with open ('arquivo.csv') as csvfile:
+	spamreader = csv.reader(csvfile, delimiter=',')
+	for row in spamreader:
+		print(', '.join(row))
+###################################
+
+#ler do usuario
+input("Informe o nome \n")
+
+#ler do usuario e converter (casting)
+int(input("Informe um valor \n"))
+float(input("Informe um valor \n"))
